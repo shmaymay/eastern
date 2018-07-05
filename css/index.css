@@ -1,0 +1,224 @@
+.grid{
+    height: 480px;
+
+}
+.grid-1{
+    width: 190px;
+    height: 100%;
+    background-color: #6e6568;
+    color: #ffffff;
+    font-size: 13px;
+    margin-left:50px;
+}
+.grid-1 a{
+    color: #ffffff;
+    font-size: 13px;
+}
+.grid-1 a:hover{
+    color: #f10215;
+}
+.grid-1 ul{
+    padding: 20px 0;
+}
+.grid-1 ul li{
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.grid-1 ul li:hover{
+    background-color: #9c9698;
+}
+.grid-2 {
+    width: 740px;
+    height: 100%;
+    background-color: purple;
+    margin-left: 10px;
+}
+
+.grid-2-a{
+    position: relative;
+}
+.grid-2-a a{
+    text-decoration: none;
+}
+.arrow-l,
+.arrow-r{
+    position: absolute;
+    top:50%;
+    width: 26px;
+    height: 45px;
+    background: rgba(0,0,0,0.3);
+    transform: translateY(-50%);/*箭头居中*/
+    text-align: center;
+    line-height: 45px;
+    color:rgba(255,255,255,0.6);/*半透明*/
+    font-size: 20px;
+
+}
+.arrow-r{
+    right:0;
+}
+.circle{
+    width: 100px;
+    height: 20px;
+    background:rgba(255,255,255,0.3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.circle li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin:4px;
+    cursor: pointer;/*鼠标经过li的时候变成小手*/
+}
+.circle .current {
+    background-color: #f10215;
+}
+.grid-3 {
+    width: 190px;
+    height: 100%;
+    background-color: blue;
+}
+.login{
+    height: 85px;
+    border-bottom: 1px solid #e2e3e4;
+    background-color: #ffffff;
+    padding:15px;
+
+}
+.login-a{
+    width: 95px;
+    height: 60px;
+    line-height:20px;
+    font-size: 12px;
+    white-space: nowrap;/*强制一行显示*/
+    overflow: hidden;/*溢出隐藏*/
+    text-overflow: ellipsis;/*超出的部分显示省略号*/
+    color: #666;
+    padding-left: 60px;/*paddng把文字挤过来*/
+    position: relative;
+}
+.login-a a{
+    color:#666;
+}
+.login-a a:hover{
+    color: #f10215;
+}
+.head-logo{
+    width: 50px;
+    width: 50px;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+.head-logo img{
+    width: 100%;/*图片过大，这样可以缩小显示*/
+    border-radius: 50%;
+}
+.login-b a{
+    float: left;
+    width: 70px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 6px;
+    text-align: center;
+    color: #f10215;
+    border-radius:50px;
+    text-decoration: none;
+    box-shadow: 2px 3px 20px rgba(0,0,0,0.3);
+}
+.login-b a:hover{
+    background-color: #f10215;
+    color: #fdfdfe;
+}
+.news{
+    height: 147px;
+    border-bottom: 1px solid #e2e3e4;
+    background-color: #ffffff;
+    padding:7px 13px 0px;
+}
+.news-a{
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.news-a a{
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    text-decoration: none;
+
+}
+.cuxiao{
+    width:38px;
+    height: 17px;
+    border-right: 1px solid #ccc;
+}
+.gg{
+    margin-left: 15px;
+}
+.news-a .more{
+    float: right;
+}
+.news-a div{
+    height: 2px;
+    width: 28px;
+    background-color: #f10215;
+    position: absolute;
+    bottom: -1px;
+    left:53px;
+}
+.news-b{
+    padding: 16px 0;
+    line-height: 23px;
+    height: 23px;
+}
+.news-b a{
+    text-decoration: none;
+}
+.expand{
+    height: 210px;
+    background-color: #ffffff;
+    overflow: hidden;/*继承了父亲的190px多余的裁减掉*/
+}
+.expand ul{
+    width: 195px;
+}
+.expand li{
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc ;
+    border-bottom: 1px solid #ccc ;
+    float: left;
+
+
+}
+.expand li a{
+    display: block;/*行际元素转成块内元素才有大小*/
+    padding-top: 15px;
+   text-align: center;
+    text-decoration: none;
+}
+.expand li span{
+    color: #ddd4c4;
+
+}
+.expand li i{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    background: url("../images/service.png") no-repeat;
+}
+/*选择属于父元素的第一个子元素的每个 <li> 元素*/
+.expand li:first-child i{
+    width: 24px;
+    height: 37px;
+    background-position: -40px -46px;
+}
